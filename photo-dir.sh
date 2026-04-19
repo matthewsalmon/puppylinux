@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# script to dreate a dated directory
+
 DIRECTORY=$(date +%Y.%m.%d)
 
 echo "Date is $DIRECTORY ..."
