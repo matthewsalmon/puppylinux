@@ -1,0 +1,111 @@
+apps
+id
+dolphin
+apt update
+apt upgrade
+apt update
+apt install krusader breeze-icon-theme
+krusader &
+dolphin &
+ls
+pwd
+cd
+cat .bashrc 
+ls -la
+micro .bashrc
+apt install micro
+micro .bashrc
+history -a
+ls
+git
+apt install git
+pwd
+ls
+mkdir puppy-repo
+cd puppy-re
+cd puppy-repo/
+echo "# puppylinux" >> README.md
+git init
+git add README.md 
+git commit -m "first commit"
+git config user.email "matthewsalmon@tutanota.de"
+git config user.name "matthewsalmon"
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/matthewsalmon/puppylinux.git
+git push -u origin main
+gh auth login
+apt install gh
+gh auth login
+git push -u origin main
+ls
+cp /mnt/mmcblk0p1/photo/walks/photo-dir.sh .
+h
+source .bashrc
+pwd
+source ~/.bashrc
+h
+git add photo-dir.sh 
+pwd
+git commit -m "script to create an image directory based on the current date"
+git push -u origin main
+micro .bashrc
+source .bashrc
+ll
+htop
+pwd
+h
+micro .bashrc
+source .bashrc
+apps
+pwd
+ls
+./firefox-147.0.r20260203002554-x86_64.AppImage 
+h
+pwd
+ls
+ll
+cd puppy-repo/
+ls
+git push -u origin main
+h
+mv puppy-repo puppy-git
+cd puppy-git/
+ls
+micro photo-dir.sh 
+git push -u origin main
+git commit -m "added a comment"
+git add photo-dir.sh 
+git commit -m "added a comment"
+git push -u origin main
+ mc_print_command_buffer () { printf "%s\\n" "$READLINE_LINE" >&10; }
+ bind -x '"\e_":"mc_print_command_buffer"'
+ bind -x '"\e+":"echo $BASH_VERSINFO:$READLINE_POINT >&10"'
+ if test ${BASH_VERSION%%.*} -ge 5 && [[ ${PROMPT_COMMAND@a} == *a* ]] 2> /dev/null; then    eval "PROMPT_COMMAND+=( 'pwd>&8;kill -STOP $$' )";  else    PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND }'pwd>&8;kill -STOP $$';  fi
+quit
+ cd "`printf '%b' '\0057'`"
+ll
+h
+micro
+ll
+nnn
+mc
+apt install nnn mc
+mc
+apt search eiffel
+apps
+mount /dev/sda2 /mnt/sda2
+mount
+apps
+ls
+pwd
+cd
+cd puppy-git/
+ls
+cp ~/.bashrc bashrc
+ls
+h
+mv bashrc puppy.bashrc
+git add puppy.bashrc 
+git commit -m "saving the bashrc file"
+git push -u origin main
