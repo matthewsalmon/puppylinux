@@ -24,3 +24,7 @@ alias ll="ls -la"
 alias h=history
 alias ..="cd .."
 alias apps="cd /mnt/sda2/downloads"
+
+export PS1="\e[0;32m[\u@\h \W]\$ \e[0m"
+
+eval "$(fzf --bash)"
