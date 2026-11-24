@@ -4,8 +4,9 @@ a collection of scripts created with puppy linux
 
 ## appimage_menu.sh
 
-Adds every AppImage in a folder to the Puppy (JWM) menu, using each app's own
-`.desktop` file and icon.
+Adds every AppImage in a folder to the Puppy menu, using each app's own
+`.desktop` file and icon. Works with labwc (Wayland) and JWM Puppies; on JWM it
+runs `fixmenus`.
 
 ```
 ./appimage_menu.sh ~/Applications
