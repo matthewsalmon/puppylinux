@@ -27,7 +27,9 @@ for app in "$DIR"/*.AppImage; do
     [ -z "$desk" ] && { echo "skip $name (no .desktop)"; continue; }
 
     cp -L squashfs-root/.DirIcon "$ICONS/$name.png" 2>/dev/null
-    sed -e "s|^Exec=[^ ]*|Exec=\"$app\"|" \
+    # No quotes around the path: some labwc launchers pass them literally.
+    case "$app" in *" "*) echo "warning: $name - path has spaces, menu launch may fail" ;; esac
+    sed -e "s|^Exec=[^ ]*|Exec=$app|" \
         -e "s|^Icon=.*|Icon=$ICONS/$name.png|" \
         -e "/^TryExec=/d" "$desk" > "$APPS/appimage-$name.desktop"
     echo "added $name"
